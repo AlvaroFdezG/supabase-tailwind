@@ -1,0 +1,177 @@
+@import "tailwindcss";
+
+.background-color {
+    @apply bg-[#0F0F0F];
+}
+
+.button-form {
+    @apply transition-all duration-150 rounded-md text-white text-center w-full border border-[#4D4D4D]/50 hover:border-[#4D4D4D] p-2 text-base font-medium;
+}
+
+.button-absolute {
+    @apply transition-all duration-150 absolute top-8 p-2 right-12 text-xs rounded-md text-center bg-[#242424] border border-[#4D4D4D]/50 hover:border-[#4D4D4D];
+}
+
+.button-submit {
+    @apply transition-all duration-150 rounded-md text-white text-center w-full border bg-[#006239] border-[#349167] hover:bg-[#2A7252] hover:border-[#4fc791] p-2 text-base font-medium;
+}
+
+.grey-text {
+    @apply text-[#898989];
+}
+
+.input-form {
+    @apply placeholder:text-[#4D4D4D] rounded-md bg-[#1C1C1C] border border-[#4D4D4D]/50 p-2 text-sm;
+}
+
+.eye-icon {
+    @apply bg-[#242424] text-[#898989] transition-all duration-150 rounded-md text-center border border-[#4D4D4D]/50 hover:border-[#4D4D4D] p-2 font-medium absolute right-[3px] top-[32px] text-xs;
+}
+
+.btn-green {
+    @apply transition-all duration-150 rounded-md text-white text-center border bg-[#006239] border-[#349167] hover:bg-[#2A7252] hover:border-[#4fc791] p-1 pl-2 pr-2;
+}
+
+.btn-gray {
+    @apply transition-all duration-150 rounded-md text-white text-center border bg-[#242424] border border-[#4D4D4D]/50 hover:border-[#4D4D4D] p-1 pl-2 pr-2;
+}
+
+.btn-green-big {
+    @apply transition-all duration-150 rounded-md text-white text-center border bg-[#006239] border-[#349167] hover:bg-[#2A7252] hover:border-[#4fc791] p-2 pl-4 pr-4 text-sm font-semibold;
+}
+
+.btn-gray-big {
+    @apply transition-all duration-150 rounded-md text-white text-center border bg-[#242424] border border-[#4D4D4D]/50 hover:border-[#4D4D4D] p-2 pl-4 pr-4 text-sm font-semibold;
+}
+
+.icon-white {
+    @apply bg-white text-black p-2 rounded-md block text-center w-8 font-light;
+}
+
+.xmark {
+    @apply text-2xl text-[#898989];
+}
+
+.storage-tab {
+    @apply transition-all duration-150 text-xs p-1 pe-3 ps-3 border border-[#4D4D4D]/50 hover:border-[#4D4D4D] rounded hover:text-white;
+}
+
+.card-storage {
+    @apply bg-[#171717] p-5 block rounded-md transition-all duration-150 border border-[#4D4D4D]/50 hover:border-[#4D4D4D];
+}
+
+.storage-button {
+    @apply bg-[#242424] transition-all duration-150 p-2 pe-3 ps-3 border border-[#4D4D4D]/50 hover:border-[#4D4D4D] rounded-md hover:text-white text-sm;
+}
+
+.background-color {
+    @apply bg-[#0F0F0F];
+}
+
+.button-form {
+    @apply transition-all duration-150 rounded-md text-white text-center w-full border border-[#4D4D4D]/50 hover:border-[#4D4D4D] p-2 text-base font-medium;
+}
+
+.button-absolute {
+    @apply transition-all duration-150 absolute top-8 p-2 right-12 text-xs rounded-md text-center bg-[#242424] border border-[#4D4D4D]/50 hover:border-[#4D4D4D];
+}
+
+.button-submit {
+    @apply transition-all duration-150 rounded-md text-white text-center w-full border bg-[#006239] border-[#349167] hover:bg-[#2A7252] hover:border-[#4fc791] p-2 text-base font-medium;
+}
+
+.grey-text {
+    @apply text-[#898989];
+}
+
+.input-form {
+    @apply placeholder:text-[#4D4D4D] rounded-md bg-[#1C1C1C] border border-[#4D4D4D]/50 p-2 text-sm;
+}
+
+.eye-icon {
+    @apply bg-[#242424] text-[#898989] transition-all duration-150 rounded-md text-center border border-[#4D4D4D]/50 hover:border-[#4D4D4D] p-2 font-medium absolute right-[3px] top-[32px] text-xs;
+}
+
+.btn-green {
+    @apply transition-all duration-150 rounded-md text-white text-center border bg-[#006239] border-[#349167] hover:bg-[#2A7252] hover:border-[#4fc791] p-1 pl-2 pr-2;
+}
+
+.btn-gray {
+    @apply transition-all duration-150 rounded-md text-white text-center border bg-[#242424] border border-[#4D4D4D]/50 hover:border-[#4D4D4D] p-1 pl-2 pr-2;
+}
+
+.btn-green-big {
+    @apply transition-all duration-150 rounded-md text-white text-center border bg-[#006239] border-[#349167] hover:bg-[#2A7252] hover:border-[#4fc791] p-2 pl-4 pr-4 text-sm font-semibold;
+}
+
+.btn-gray-big {
+    @apply transition-all duration-150 rounded-md text-white text-center border bg-[#242424] border border-[#4D4D4D]/50 hover:border-[#4D4D4D] p-2 pl-4 pr-4 text-sm font-semibold;
+}
+
+.icon-white {
+    @apply bg-white text-black p-2 rounded-md block text-center w-8 font-light;
+}
+
+.xmark {
+    @apply text-2xl text-[#898989];
+}
+
+.storage-tab {
+    @apply transition-all duration-150 text-xs p-1 pe-3 ps-3 border border-[#4D4D4D]/50 hover:border-[#4D4D4D] rounded hover:text-white;
+}
+
+.card-storage {
+    @apply bg-[#171717] p-5 block rounded-md transition-all duration-150 border border-[#4D4D4D]/50 hover:border-[#4D4D4D];
+}
+
+.storage-button {
+    @apply bg-[#242424] transition-all duration-150 p-2 pe-3 ps-3 border border-[#4D4D4D]/50 hover:border-[#4D4D4D] rounded-md hover:text-white text-sm;
+}
+
+.storage-button-green {
+    @apply transition-all duration-150 p-2 pe-3 ps-3 border rounded-md bg-[#006239] border-[#349167] hover:bg-[#2A7252] hover:border-[#4fc791] text-sm;
+}
+
+.icon-social {
+    @apply text-[#898989] text-xl hover:text-white transition-all duration-150;
+}
+
+.footer-link {
+    @apply text-[#898989] text-sm mb-2 hover:text-white block;
+}
+
+.framew-icon {
+    @apply transition-all rounded-md duration-150 cursor-pointer p-2 pe-3 ps-3 hover:border border border-[#121212] text-3xl text-[#B4B4B4] hover:text-white hover:border-white w-15 h-15;
+}
+
+.card-index {
+    @apply bg-[#171717] block rounded-2xl transition-all duration-150 border border-[#4D4D4D]/50 hover:border-[#4D4D4D];
+}
+
+.index-tab-active {
+    @apply bg-[#0F0F0F] p-2 w-36 text-center text-sm rounded-full border font-semibold;
+}
+
+.index-tab {
+    @apply transition-all duration-150 text-[#B4B4B4] bg-[#0F0F0F] p-2 w-36 text-center text-sm rounded-full border border-[#4D4D4D]/50 font-semibold hover:border-[#4D4D4D];
+}
+
+.menu-card {
+    @apply bg-[#121212] border border-[#4D4D4D]/50 rounded-xl;
+}
+
+.menu-icon {
+    @apply bg-[#242424] rounded-md text-center border border-[#4D4D4D]/50 w-[45px] pt-3 pb-3 font-medium text-lg;
+}
+
+.menu-icon-small {
+    @apply text-[#898989] rounded-md text-center border border-[#4D4D4D]/50 p-2 font-medium;
+}
+
+.card-animation {
+    @apply bg-[#171717] rounded-2xl transition-all duration-150 border border-[#4D4D4D]/50 hover:border-[#4D4D4D];
+}
+
+.index-grid-element {
+    @apply bg-[#171717] mt-5 gap-4 text-white border border-[#4D4D4D]/50 hover:border-[#4D4D4D] rounded-xl;
+}

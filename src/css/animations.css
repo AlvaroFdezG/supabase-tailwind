@@ -1,0 +1,38 @@
+.animation-scroll {
+    animation-name: scroll;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.animation-scroll-little {
+    animation-name: scroll;
+    animation-duration: 45s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.scroll-gradient {
+    background: #121212;
+    background: linear-gradient(90deg, rgba(18, 18, 18, 1) 0%, rgba(18, 18, 18, 0) 50%, rgba(18, 18, 18, 1) 100%);
+}
+
+.scroll-gradient-profiles {
+    background: #121212;
+    background: linear-gradient(90deg, rgba(18, 18, 18, 1) 0%, rgba(18, 18, 18, 0) 34%, rgba(18, 18, 18, 0) 66%, rgba(18, 18, 18, 1) 100%);
+}
+
+.scroll-gradient-vertical {
+    background: #121212;
+    background: linear-gradient(0deg, rgba(18, 18, 18, 1) 0%, rgba(18, 18, 18, 0) 100%);
+}
+
+@keyframes scroll {
+    from {
+        left: -250px;
+    }
+
+    to {
+        left: -1300px;
+    }
+}

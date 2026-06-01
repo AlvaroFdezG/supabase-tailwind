@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supabase | Register</title>
+    <link rel="stylesheet" href="./../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="shortcut icon" href="./../assets/images/supabase-logo-icon.svg" type="image/x-icon">
+</head>
+
+<body class="bg-[#121212] text-white">
+    <header
+        class="bg-[#121212] z-40 pt-4 pb-4 lg:pt-5 lg:pb-5 text-sm font-semibold sticky top-0 w-full border-b border-b-[#4D4D4D]/50">
+        <div class="container max-w-[1420px] m-auto ps-5 pe-5 flex justify-between items-center">
+            <div class="flex justify-start items-center gap-9">
+                <a href="./../index.html"><img class="w-32" src="./../assets/images/supabase-dark.svg" alt="logo"></a>
+                <ul class="justify-center items-center gap-5 hidden lg:flex">
+
+                    <nav class="relative group/product">
+                        <a href="#" class="hover:text-[#01BF70]">Product <i
+                                class="fa-solid fa-chevron-down text-[0.5rem]"></i></a>
+                        <div class="absolute top-5 pt-8 left-[-25px] hidden group-hover/product:flex">
+
+                            <section class="menu-card w-150 xl:w-250 overflow-hidden flex flex-col xl:flex-row">
+                                <article class=" flex p-6 gap-6 justify-start">
+                                    <ul class="flex flex-col gap-3 w-90">
+                                        <li>
+                                            <a href="#"
+                                                class="flex items-center gap-3 text-[#898989] hover:text-[#B4B4B4]">
+                                                <i class="menu-icon fa-solid fa-database"></i>
+                                                <div>
+                                                    <p class="text-sm text-white">Database</p>
+                                                    <p class="text-xs">Fully portable Postreg database</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                class="flex items-center gap-3 text-[#898989] hover:text-[#B4B4B4]">
+                                                <i class="menu-icon fa-solid fa-lock"></i>
+                                                <div>
+                                                    <p class="text-sm text-white">Authentication</p>
+                                                    <p class="text-xs">User Management out of the box</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="./storage.html"
+                                                class="flex items-center gap-3 text-[#898989] hover:text-[#B4B4B4]"><i
+                                                    class="menu-icon fa-regular fa-file"></i>
+                                                <div>
+                                                    <p class="text-sm text-white">Storage</p>
+                                                    <p class="text-xs">Serverless storage for any media</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                class="flex items-center gap-3 text-[#898989] hover:text-[#B4B4B4]"><i
+                                                    class="menu-icon fa-solid fa-circle-notch"></i>
+                                                <div>
+                                                    <p class="text-sm text-white">Edge Functions</p>
+                                                    <p class="text-xs">Deploy code globally on the edge</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                class="flex items-center gap-3 text-[#898989] hover:text-[#B4B4B4]"><i
+                                                    class="menu-icon fa-solid fa-arrow-pointer"></i>
+                                                <div>
+                                                    <p class="text-sm text-white">Realtime</p>
+                                                    <p class="text-xs">Sinchronize and broadcast events</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <div>
+                                        <p class="grey-text font-mono font-light mb-3">MODULES</p>
+                                        <ul class="flex flex-col gap-2 justify-start">
+                                            <li>
+                                                <a href="#"
+                                                    class="flex items-center gap-3 text-[#898989] hover:text-[#B4B4B4]">
+                                                    <div class="menu-icon-small">
+                                                        <i class="fa-solid fa-diagram-project"></i>
+                                                    </div>
+                                                    <div>
+                                                        <p class="text-white text-xs">Vector</p>
+                                                        <p class="text-xs">AI toolkit to
+                                                            manage embeddings</p>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#"
+                                                    class="flex items-center gap-3 text-[#898989] hover:text-[#B4B4B4]">
+                                                    <div class="menu-icon-small">
+                                                        <i class="fa-regular fa-clock"></i>
+                                                    </div>
+                                                    <div>
+                                                        <p class="text-white text-xs">Chron</p>
+                                                        <p class="text-xs">Schedule and manage recurring Jobs</p>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#"
+                                                    class="flex items-center gap-3 text-[#898989] hover:text-[#B4B4B4]">
+                                                    <div class="menu-icon-small">
+                                                        <i class="fa-solid fa-clone"></i>
+                                                    </div>
+                                                    <div>
+                                                        <p class="text-white text-xs">Queues</p>
+                                                        <p class="text-xs">Durable Message Queues with guaranteed
+                                                            delivery</p>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="border-t border-t-[#4D4D4D] mt-2 mb-1"></li>
+                                            <li>
+                                                <a href="#"
+                                                    class="flex items-center gap-3 text-[#898989] hover:text-[#B4B4B4]">
+                                                    <div class="menu-icon-small">
+                                                        <i class="fa-solid fa-diamond"></i>
+                                                    </div>
+                                                    <div>
+                                                        <p class="text-white text-xs">Features</p>
+                                                        <p class="text-xs">Explore everything you can do with
+                                                            Supabase</p>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </article>
+                                <article class="bg-[#171717] p-6 w-full xl:w-130 border-s border-s-[#4D4D4D]/50">
+                                    <a href="#"
+                                        class="text-[#898989] hover:text-white font-mono font-light mb-3">CUSTOMER
+                                        STORIES <i class="fa-solid fa-chevron-right"></i></a>
+                                    <a href="#"
+                                        class="flex items-center mt-4 mb-8 gap-4 text-[#B4B4B4] hover:text-white">
+                                        <div
+                                            class="w-24 h-12 flex justify-center items-center bg-[#121212] border border-[#4D4D4D]/50 rounded-md">
+                                            <span class="grey-text text-xs"><i
+                                                    class="fa-solid fa-up-right-from-square"></i>
+                                                Hyper</span>
+                                        </div>
+                                        <p> Hyper builds AI marketing agents on Supabase</p>
+                                    </a>
+                                    <p class="grey-text font-mono font-light mb-3">COMPARE SUPABASE</p>
+                                    <ul>
+                                        <li class="text-[#B4B4B4] hover:text-white font-normal text-sm mb-2"><a
+                                                href="#">Supabase vs Firebase</a></li>
+                                        <li class="text-[#B4B4B4] hover:text-white font-normal text-sm mb-2"><a
+                                                href="#">Supabase vs Heroku Postgres</a></li>
+                                        <li class="text-[#B4B4B4] hover:text-white font-normal text-sm mb-2"><a
+                                                href="#">Supabase vs Auth0</a></li>
+                                    </ul>
+                                </article>
+                            </section>
+                        </div>
+                    </nav>
+                    <li class="relative group/developers">
+                        <a href="#" class="hover:text-[#01BF70]">Developers <i
+                                class="fa-solid fa-chevron-down text-[0.5rem]"></i></a>
+
+                        <div class="absolute top-5 pt-8 left-[-25px] hidden group-hover/developers:flex">
+
+                            <section class="menu-card w-130 xl:w-220 overflow-hidden flex flex-col xl:flex-row">
+                                <article class=" flex p-6 gap-30 xl:gap-20 justify-start w-full xl:w-1/2">
+                                    <div>
+                                        <p class="grey-text font-mono font-light mb-6">Developers</p>
+                                        <ul class="flex flex-col gap-5 justify-start">
+                                            <li>
+                                                <a href="#"
+                                                    class="flex items-center gap-3 text-[#B4B4B4] hover:text-white">
+                                                    <div class="flex items-center gap-2">
+                                                        <i class="fa-regular fa-file text-lg"></i>
+                                                        <p class="font-normal">Documentation</p>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#"
+                                                    class="flex items-center gap-3 text-[#B4B4B4] hover:text-white">
+                                                    <div class="flex items-center gap-2">
+                                                        <i class="fa-solid fa-border-all"></i>
+                                                        <p class="font-normal">Integrations</p>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#"
+                                                    class="flex items-center gap-3 text-[#B4B4B4] hover:text-white">
+                                                    <div class="flex items-center gap-2">
+                                                        <i class="fa-regular fa-file text-lg"></i>
+                                                        <p class="font-normal">Supabase UI</p>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#"
+                                                    class="flex items-center gap-3 text-[#B4B4B4] hover:text-white">
+                                                    <div class="flex items-center gap-2">
+                                                        <i class="fa-solid fa-arrow-rotate-right"></i>
+                                                        <p class="font-normal">Changelog</p>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#"
+                                                    class="flex items-center gap-3 text-[#B4B4B4] hover:text-white">
+                                                    <div class="flex items-center gap-2">
+                                                        <i class="fa-solid fa-circle-question"></i>
+                                                        <p class="font-normal">Support</p>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <p class="grey-text font-mono font-light mb-6">Resources</p>
+                                        <ul class="flex flex-col gap-5 justify-start">
+                                            <li>
+                                                <a href="#"
+                                                    class="flex items-center gap-3 text-[#B4B4B4] hover:text-white">
+                                                    <div class="flex items-center gap-2">
+                                                        <i class="fa-brands fa-github"></i>
+                                                        <p class="font-normal">Open Source</p>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#"
+                                                    class="flex items-center gap-3 text-[#B4B4B4] hover:text-white">
+                                                    <div class="flex items-center gap-2">
+                                                        <i class="fa-solid fa-pencil"></i>
+                                                        <p class="font-normal">Contribute</p>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#"
+                                                    class="flex items-center gap-3 text-[#B4B4B4] hover:text-white">
+                                                    <div class="flex items-center gap-2">
+                                                        <i class="fa-solid fa-handshake"></i>
+                                                        <p class="font-normal">Become a Partner</p>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#"
+                                                    class="flex items-center gap-3 text-[#B4B4B4] hover:text-white">
+                                                    <div class="flex items-center gap-2">
+                                                        <i class="fa-solid fa-briefcase"></i>
+                                                        <p class="font-normal">Careers</p>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#"
+                                                    class="flex items-center gap-3 text-[#B4B4B4] hover:text-white">
+                                                    <div class="flex items-center gap-2">
+                                                        <i class="fa-regular fa-calendar"></i>
+                                                        <p class="font-normal">Events & Webinars</p>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </article>
+                                <article class=" bg-[#171717] p-6 w-full xl:w-1/2 border-s border-s-[#4D4D4D]/50">
+
+                                    <a href="#" class="block font-mono font-light text-[#898989] hover:text-white">Blog
+                                        <i class="text-xs fa-solid fa-chevron-right"></i></a>
+
+                                    <a href="#" class="block mt-5 gap-4 text-[#B4B4B4] hover:text-white">
+                                        <p class="text-base font-normal">Navigating Regional Network Blocks</p>
+                                        <p class="font-normal text-sm">A look at recent ISP and government-directed
+                                            blocks of Supabase domains in
+                                            three regions—what triggered them, how...</p>
+                                    </a>
+
+                                    <a href="#" class="block mt-5 gap-4 text-[#B4B4B4] hover:text-white">
+                                        <p class="text-base font-normal">Navigating Regional Network Blocks</p>
+                                        <p class="font-normal text-sm">A look at recent ISP and government-directed
+                                            blocks of Supabase domains in
+                                            three regions—what triggered them, how...</p>
+                                    </a>
+
+                                </article>
+                            </section>
+                        </div>
+                    </li>
+                    <li class="group/solutions relative">
+                        <a href="#" class="hover:text-[#01BF70]">Solutions <i
+                                class="fa-solid fa-chevron-down text-[0.5rem]"></i></a>
+                        <div class=" absolute top-5 pt-8 left-[-25px] hidden group-hover/solutions:flex">
+                            <section class="menu-card w-150 xl:w-260 overflow-hidden flex flex-col xl:flex-row">
+
+                                <article class=" flex p-6 gap-20 xl:gap-14 justify-start w-full xl:w-7/12">
+                                    <div>
+                                        <p class="grey-text font-mono font-light mb-6">Skill Level</p>
+                                        <ul class="flex flex-col gap-5 justify-start">
+                                            <li>
+                                                <a href="#"
+                                                    class="flex items-center gap-3 text-[#B4B4B4] hover:text-white">
+                                                    <div class="flex items-center gap-2">
+                                                        <i class="fa-regular fa-file text-lg"></i>
+                                                        <p class="font-normal">Documentation</p>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#"
+                                                    class="flex items-center gap-3 text-[#B4B4B4] hover:text-white">
+                                                    <div class="flex items-center gap-2">
+                                                        <i class="fa-solid fa-border-all"></i>
+                                                        <p class="font-normal">Integrations</p>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#"
+                                                    class="flex items-center gap-3 text-[#B4B4B4] hover:text-white">
+                                                    <div class="flex items-center gap-2">
+                                                        <i class="fa-regular fa-file text-lg"></i>
+                                                        <p class="font-normal">Supabase UI</p>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#"
+                                                    class="flex items-center gap-3 text-[#B4B4B4] hover:text-white">
+                                                    <div class="flex items-center gap-2">
+                                                        <i class="fa-solid fa-arrow-rotate-right"></i>
+                                                        <p class="font-normal">Changelog</p>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#"
+                                                    class="flex items-center gap-3 text-[#B4B4B4] hover:text-white">
+                                                    <div class="flex items-center gap-2">
+                                                        <i class="fa-solid fa-circle-question"></i>
+                                                        <p class="font-normal">Support</p>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#"
+                                                    class="flex items-center gap-3 text-[#B4B4B4] hover:text-white">
+                                                    <div class="flex items-center gap-2">
+                                                        <i class="fa-solid fa-border-all"></i>
+                                                        <p class="font-normal">Integrations</p>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <p class="grey-text font-mono font-light mb-6">Who it's for</p>
+                                        <ul class="flex flex-col gap-5 justify-start">
+                                            <li>
+                                                <a href="#"
+                                                    class="flex items-center gap-3 text-[#B4B4B4] hover:text-white">
+                                                    <div class="flex items-center gap-2">
+                                                        <i class="fa-brands fa-github"></i>
+                                                        <p class="font-normal">Open Source</p>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#"
+                                                    class="flex items-center gap-3 text-[#B4B4B4] hover:text-white">
+                                                    <div class="flex items-center gap-2">
+                                                        <i class="fa-solid fa-pencil"></i>
+                                                        <p class="font-normal">Contribute</p>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#"
+                                                    class="flex items-center gap-3 text-[#B4B4B4] hover:text-white">
+                                                    <div class="flex items-center gap-2">
+                                                        <i class="fa-solid fa-handshake"></i>
+                                                        <p class="font-normal">Become a Partner</p>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#"
+                                                    class="flex items-center gap-3 text-[#B4B4B4] hover:text-white">
+                                                    <div class="flex items-center gap-2">
+                                                        <i class="fa-solid fa-briefcase"></i>
+                                                        <p class="font-normal">Careers</p>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#"
+                                                    class="flex items-center gap-3 text-[#B4B4B4] hover:text-white">
+                                                    <div class="flex items-center gap-2">
+                                                        <i class="fa-regular fa-calendar"></i>
+                                                        <p class="font-normal">Events & Webinars</p>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <p class="grey-text font-mono font-light mb-6">Skill Level</p>
+                                        <ul class="flex flex-col gap-5 justify-start">
+                                            <li>
+                                                <a href="#"
+                                                    class="flex items-center gap-3 text-[#B4B4B4] hover:text-white">
+                                                    <div class="flex items-center gap-2">
+                                                        <i class="fa-regular fa-file text-lg"></i>
+                                                        <p class="font-normal">Documentation</p>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#"
+                                                    class="flex items-center gap-3 text-[#B4B4B4] hover:text-white">
+                                                    <div class="flex items-center gap-2">
+                                                        <i class="fa-solid fa-border-all"></i>
+                                                        <p class="font-normal">Integrations</p>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#"
+                                                    class="flex items-center gap-3 text-[#B4B4B4] hover:text-white">
+                                                    <div class="flex items-center gap-2">
+                                                        <i class="fa-regular fa-file text-lg"></i>
+                                                        <p class="font-normal">Supabase UI</p>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#"
+                                                    class="flex items-center gap-3 text-[#B4B4B4] hover:text-white">
+                                                    <div class="flex items-center gap-2">
+                                                        <i class="fa-solid fa-arrow-rotate-right"></i>
+                                                        <p class="font-normal">Changelog</p>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                </article>
+                                <article class=" bg-[#171717] p-6 w-full xl:w-5/12 border-s border-s-[#4D4D4D]/50">
+                                    <p class="grey-text font-mono font-light mb-6">Migration</p>
+                                    <a href="#"
+                                        class="bg-[#121212] block mt-5 gap-4 p-4 text-[#B4B4B4] hover:text-white border border-[#4D4D4D]/50 hover:border-[#4D4D4D] rounded-md">
+                                        <i class="fa-solid fa-angles-right me-3"></i> Switch from Firebase
+                                    </a>
+                                    <a href="#"
+                                        class="bg-[#121212] block mt-5 gap-4 p-4 text-[#B4B4B4] hover:text-white border border-[#4D4D4D]/50 hover:border-[#4D4D4D] rounded-md">
+                                        <i class="fa-solid fa-angles-right me-3"></i> Switch from Neon
+                                    </a>
+
+                                </article>
+                            </section>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:text-[#01BF70]">Pricing</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:text-[#01BF70]">Docs</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:text-[#01BF70]">Blog</a>
+                    </li>
+                </ul>
+            </div>
+            <button id="burgerButton" class="inline lg:hidden cursor-pointer">
+                <i class="fa-solid fa-bars text-lg hover:bg-[#242424] p-2 text-[#898989] rounded"></i>
+            </button>
+            <div class="hidden lg:flex items-center">
+                <a href="#" class="text-[#898989] me-4 text-xs font-normal">
+                    <i class="text-base fa-brands fa-github me-2"></i>99.5K</a>
+                <a href="./register.html" class="btn-gray text-xs me-1">Sign in</a>
+                <a href="#" class="btn-green text-xs">Start your project</a>
+            </div>
+        </div>
+    </header>
+
+    <nav id="mobileMenu" class="bg-[#242424] fixed w-screen h-screen z-50 top-0 hidden lg:hidden">
+        <section class="p-5">
+            <div class="flex justify-between items-center">
+                <a href="./index.html"><img class="w-32" src="./assets/images/supabase-dark.svg" alt="logo"></a>
+                <button id="buttonClose" class="cursor-pointer"><i
+                        class="pe-5 fa-solid fa-xmark text-[#898989] hover:text-[#B4B4B4] text-2xl"></i></button>
+            </div>
+            <ul class="mt-10">
+                <li class="font-semibold hover:bg-[#212121] p-2 border-b border-b-[#4D4D4D]/50 "><a href="#"
+                        class="flex justify-between items-center h-full w-full">Product <i
+                            class="grey-text fa-solid fa-chevron-down"></i></a></li>
+                <li class="font-semibold hover:bg-[#212121] p-2 border-b border-b-[#4D4D4D]/50 "><a href="#"
+                        class="flex justify-between items-center h-full w-full">Developers <i
+                            class="grey-text fa-solid fa-chevron-down"></i></a></li>
+                <li class="font-semibold hover:bg-[#212121] p-2 border-b border-b-[#4D4D4D]/50 "><a href="#"
+                        class="flex justify-between items-center h-full w-full">Solutions <i
+                            class="grey-text fa-solid fa-chevron-down"></i></a></li>
+                <li class="font-semibold hover:bg-[#212121] p-2 border-b border-b-[#4D4D4D]/50 "><a href="#"
+                        class="flex justify-between items-center h-full w-full">Pricing</li></a>
+                <li class="font-semibold hover:bg-[#212121] p-2 border-b border-b-[#4D4D4D]/50 "><a href="#"
+                        class="flex justify-between items-center h-full w-full">Docs</li></a>
+                <li class="font-semibold hover:bg-[#212121] p-2 border-b border-b-[#4D4D4D]/50 "><a href="#"
+                        class="flex justify-between items-center h-full w-full">Blog</li></a>
+            </ul>
+        </section>
+        <div class="h-16 w-full bg-[#0F0F0F] absolute bottom-0 grid grid-cols-2 gap-4 ps-4 pe-4 items-center">
+            <a href="#" class="pt-4 col-span-1 h-8 flex items-center justify-center btn-gray text-xs">Sign in</a>
+            <a href="#" class="pt-4 col-span-1 h-8 flex items-center justify-center btn-green text-xs">Start your
+                project</a>
+        </div>
+    </nav>
+    <section class="hidden md:flex text-sm font-semibold w-full border-b border-b-[#4D4D4D]/50">
+        <div class="container max-w-[800px] lg:max-w-[1420px] m-auto ps-5 pe-5">
+            <ul class="flex justify-start items-center gap-8 font-normal text-[#898989]">
+                <a href="#" class="hover:text-white flex items-center justify-center gap-1 pt-4 pb-4">
+                    <i class="fa-solid fa-database"></i>
+                    <li>Database</li>
+                </a>
+                <a href="#" class="hover:text-white flex items-center justify-center gap-1 pt-4 pb-4">
+                    <i class="fa-solid fa-lock"></i>
+                    <li>Auth</li>
+                </a>
+                <a href="./storage.html" class="text-white flex items-center justify-center gap-1 border-b pt-4 pb-4">
+                    <i class="fa-regular fa-file"></i>
+                    <li>Storage</li>
+                </a>
+                <a href="#" class="hover:text-white flex items-center justify-center gap-1 pt-4 pb-4">
+                    <i class="fa-solid fa-circle-notch"></i>
+                    <li>Edge Functions</li>
+                </a>
+                <a href="#" class="hover:text-white flex items-center justify-center gap-1 pt-4 pb-4">
+                    <i class="fa-solid fa-arrow-pointer"></i>
+                    <li>Realtime</li>
+                </a>
+            </ul>
+        </div>
+    </section>
+    <main>
+        <div class="container max-w-[1420px] m-auto ps-5 pe-5">
+            <section class="flex justify-between items-center lg:items-start gap-10 mt-28 flex-col lg:flex-row">
+                <article class="w-full sm:w-9/12 lg:w-135">
+                    <i class="icon-white fa-regular fa-file"></i>
+                    <span class="ms-2">Storage</span>
+
+                    <h1 class="mt-3 mb-10 text-4xl font-semibold">Store and serve <br> any type of digital content</h1>
+                    <p class="grey-text font-semibold text-[1.1rem] mb-5">An open source S3 Compatible Object Store,
+                        with unlimited scalability, for any file type.</p>
+                    <p class="grey-text font-semibold text-[1.1rem]">With custom policies and permissions that are
+                        familiar and easy to implement.</p>
+
+                    <div class="flex gap-2 mt-10">
+                        <a href="#" class="btn-green-big">Start a project</a>
+                        <a href="#" class="btn-gray-big"><i class="fa-solid fa-book-open me-1"></i> See
+                            documentation</a>
+                    </div>
+                </article>
+                <img src="./../assets/images/storage.webp" alt="storage" class="w-full sm:w-9/12 lg:w-170">
+            </section>
+
+            <section class="mt-28 flex justify-start items-center lgitems-start gap-10 lg:gap-36 flex-col lg:flex-row">
+                <article class="w-10/12 lg:w-80">
+                    <div class="flex justify-start items-center gap-2">
+                        <i class="icon-white fa-regular fa-file"></i>
+                        <i class="xmark fa-solid fa-xmark"></i>
+                        <i class="icon-white fa-solid fa-lock"></i>
+                        <i class="xmark fa-solid fa-xmark"></i>
+                        <i class="icon-white fa-solid fa-database me-1"></i>
+                    </div>
+                    <h3 class="mt-4 mb-5 text-xl">Interoperable</h3>
+                    <p class="grey-text font-semibold">Integrates well with the rest of Supabase ecosystem, including
+                        Auth and Postgres.</p>
+                </article>
+                <article class="w-10/12 lg:w-80">
+                    <div class="flex justify-start items-center gap-2">
+                        <i class="icon-white fa-solid fa-chart-column"></i>
+                    </div>
+                    <h3 class="mt-4 mb-5 text-xl">Lightning fast</h3>
+                    <p class="grey-text font-semibold">Thin API server layer that leverages Postgres' permissions and
+                        performance.</p>
+                </article>
+                <article class="w-10/12 lg:w-80">
+                    <div class="flex justify-start items-center gap-2">
+                        <i class="icon-white fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3 class="mt-4 mb-5 text-xl">Multiple Bucket Types</h3>
+                    <p class="grey-text font-semibold">Choose the right storage models for your application: Files,
+                        Analytics, or Vectors.</p>
+                </article>
+            </section>
+            <section class="mt-48 mb-48 flex flex-col justify-center items-center gap-5">
+                <h3 class="w-full sm:w-9/12 lg:w-[980px] text-2xl lg:text-4xl text-center"><span
+                        class="font-serif">“</span>Supabase is
+                    great because it has everything. I don't need a different solution for authentication, a
+                    different solution for database, or a different solution for storage.<span
+                        class="font-serif">”</span></h3>
+                <a href="#" class="flex flex-col items-center justify-center mt-12">
+                    <p class="font-semibold">Yasser Elsaid</p>
+                    <p class="grey-text font-mono text-sm">Founder of Chatbase</p>
+                    <img class="mt-10 w-10 rounded-full" src="./../assets/images/profileStorage.jpg" alt="profile">
+                </a>
+            </section>
+            <section>
+                <div class="w-full sm:w-9/12 lg:w-full m-auto">
+                    <h3 class="text-2xl">Sleek dashboard for managing your media</h3>
+                    <p class="mt-4 grey-text font-semibold text-lg">A complete Object Explorer so that any of your team
+                        can
+                        use.</p>
+                    <p class="mt-4 grey-text font-semibold">Drag and drop uploading, moving objects, and multiple object
+                        selection. As easy as working on your desktop.</p>
+                </div>
+                <section class="flex justify-between items-center flex-col lg:flex-row gap-8">
+                    <article class="w-full sm:w-9/12 lg:w-[686px]">
+                        <ul class="flex items-center justify-start gap-1 mt-20">
+                            <li><a href="#" class="font-semibold storage-tab bg-[#313131] text-white">File previews</a>
+                            </li>
+                            <li><a href="#" class="text-[#4D4D4D] storage-tab">Column view</a></li>
+                            <li><a href="#" class="text-[#4D4D4D] storage-tab">List view</a></li>
+                            <li><a href="#" class="text-[#4D4D4D] storage-tab">Multi select actions</a></li>
+                            <li><a href="#" class="text-[#4D4D4D] hidden md:flex storage-tab">Path navigator</a></li>
+                        </ul>
+                        <img src="./../assets/images/file-previews.webp" class="bg-[#48E79F] rounded-md mt-5" alt="">
+                    </article>
+                    <article class="w-full sm:w-9/12 lg:w-145">
+                        <h4 class="text-xl mb-3">File Previews</h4>
+                        <p class="grey-text font-semibold mb-16">Preview any media type, including video and audio.</p>
+
+                        <p class="grey-text font-semibold mb-4">Check out our example app</p>
+                        <a href="#" class="card-storage">
+                            <p class="font-semibold text-lg">Profile management example</p>
+                            <p class="text-sm grey-text mt-2">Update a user account with public profile information,
+                                including uploading a profile
+                                image.</p>
+                            <p class="text-xs grey-text mt-6">View Template <i class="fa-solid fa-location-arrow"></i>
+                            </p>
+                        </a>
+                    </article>
+                </section>
+            </section>
+            <section class="mt-48 w-full sm:w-9/12 lg:w-full m-auto">
+                <h3 class="text-2xl">Bucket types for every application</h3>
+                <p class="text-[#B4B4B4] text-lg mt-4 font-semibold">Store, serve, or analyze data the way your app
+                    needs.
+                    Supabase Storage supports three purpose-built
+                    bucket types so you can pick the right tools for the job without adding extra systems.</p>
+
+                <section class="grid grid-cols-12 mt-12 gap-12">
+                    <article
+                        class="col-span-full w-9/12 md:w-full lg:col-span-4 flex flex-col justify-between items-start">
+                        <div>
+
+                            <h4 class="text-xl font-semibold mb-5">Files buckets</h4>
+                            <p class="text-[#B4B4B4] mb-10">Ideal for everyday assets and user content. Store images,
+                                videos, documents, PDFs, archives,
+                                and
+                                more, then serve them mt-4 fast from a global CDN with fine-grained access controls.
+                            </p>
+                        </div>
+                        <a href="#" class="storage-button"><i
+                                class="fa-solid fa-location-arrow text-[#B4B4B4] me-2"></i> Read the docs</a>
+                    </article>
+                    <article
+                        class="col-span-full w-9/12 md:w-full lg:col-span-4 flex flex-col justify-between items-start">
+                        <div>
+                            <h4 class="text-xl font-semibold mb-5">Analytics buckets</h4>
+                            <p class="text-[#B4B4B4]">Built for large-scale analytical workloads on open table formats
+                                such as Apache Iceberg. Keep historical or time-series data, logs, or ETL outputs in a
+                                format that is efficient to query, partition, and transform, and optionally expose via
+                                Postgres.</p>
+                        </div>
+                        <div class="flex items-center mt-4 justify-start gap-2">
+                            <a href="#" class="storage-button"><i
+                                    class="fa-solid fa-location-arrow text-[#B4B4B4] me-2"></i> Read the docs</a>
+                            <a href="#" class="storage-button"><i
+                                    class="fa-solid fa-location-arrow text-[#B4B4B4] me-2"></i> Read the blog post</a>
+                        </div>
+                    </article>
+                    <article
+                        class="col-span-full w-9/12 md:w-full lg:col-span-4 flex flex-col justify-between items-start">
+                        <div>
+                            <h4 class="text-xl font-semibold mb-5">Vector buckets</h4>
+                            <p class="text-[#B4B4B4]">Designed for AI and ML use cases that rely on semantic search or
+                                similarity matching. Store and index vector embeddings with support for multiple
+                                distance
+                                metrics, metadata filtering, and fast similarity queries for RAG systems, AI-powered
+                                search,
+                                and more.</p>
+                        </div>
+                        <div class="flex items-center mt-4 justify-start gap-2">
+                            <a href="#" class="storage-button"><i
+                                    class="fa-solid fa-location-arrow text-[#B4B4B4] me-2"></i> Read the docs</a>
+                            <a href="#" class="storage-button"><i
+                                    class="fa-solid fa-location-arrow text-[#B4B4B4] me-2"></i> Read the blog post</a>
+                        </div>
+                    </article>
+                </section>
+            </section>
+            <section
+                class="mt-48 flex justify-between gap-20 lg:gap-8 items-start flex-col lg:flex-row m-auto w-full sm:w-9/12 lg:w-full">
+                <article>
+                    <h3 class="mb-6 text-4xl font-semibold">Simple and convenient APIs</h3>
+                    <p class="text-[#B4B4B4]  font-semibold">Built from the ground up for interoperable authentication.
+                        <br> Fast and easy to implement using our powerful library clients.
+                    </p>
+                    <section class="mt-20 flex items-start justify-start gap-8">
+                        <article class="flex flex-col justify-between items-start w-1/2 lg:w-55">
+                            <div>
+                                <i class="fa-solid fa-wifi text-[#B4B4B4] text-lg mb-4 font-semibold"></i>
+                                <h4 class="font-semibold mb-5">CDN</h4>
+                                <p class="text-[#B4B4B4] mb-10">Serve from over 285 cities globally to reduce latency.
+                                </p>
+                            </div>
+                            <a href="#" class="storage-button"><i
+                                    class="fa-solid fa-location-arrow text-[#B4B4B4] me-2"></i> Explore docs</a>
+                        </article>
+                        <article class="flex flex-col justify-between items-start w-1/2 lg:w-55">
+                            <div>
+                                <i class="fa-solid fa-shuffle text-[#B4B4B4] text-lg mb-4 font-semibold"></i>
+                                <h4 class="font-semibold mb-5">Image Optimizations and Transformations</h4>
+                                <p class="text-[#B4B4B4] mb-10">Resize and compress your media files on the fly.
+                                </p>
+                            </div>
+                            <a href="#" class="storage-button"><i
+                                    class="fa-solid fa-location-arrow text-[#B4B4B4] me-2"></i> Explore docs</a>
+                        </article>
+                    </section>
+                </article>
+                <article class="w-full lg:w-[650px]">
+                    <ul class="flex items-center justify-start gap-1">
+                        <li><a href="#" class="font-semibold storage-tab bg-[#313131] text-white">Upload a file</a></li>
+                        <li><a href="#" class="text-[#4D4D4D] storage-tab">Download a file</a></li>
+                        <li><a href="#" class="text-[#4D4D4D] storage-tab">List files</a></li>
+                        <li><a href="#" class="text-[#4D4D4D] storage-tab">Move and rename files</a></li>
+                        <li><a href="#" class="text-[#4D4D4D] storage-tab hidden md:flex">Delete files</a></li>
+                    </ul>
+                    <img src="./../assets/images/storage-code.png" class="rounded-md w-full mt-5" alt="">
+                </article>
+            </section>
+        </div>
+        <section class="mt-48 border-t border-t-[#4D4D4D]/50 border-b border-b-[#4D4D4D]/50 pb-32 pt-32">
+            <div
+                class="container max-w-[1420px] m-auto ps-5 pe-5 flex flex-col lg:flex-row justify-between items-start gap-10 w-full sm:w-9/12 lg:w-full">
+                <article class="w-full sm:w-9/12 lg:w-140">
+                    <h3 class="mb-6 text-2xl font-semibold">Integrates natively <br> with Supabase Auth</h3>
+                    <p class="text-[#B4B4B4]  font-semibold">Using Postgres Row Level Security to create Object access
+                        rules.</p>
+                    <p class="text-[#B4B4B4] font-semibold mt-5 mb-10">Storage Authorization is built around Postgres so
+                        that you
+                        can use any combination of SQL, Postgres functions, and even your own metadata to write
+                        policies.</p>
+
+                    <a href="#" class="storage-button"><i class="fa-solid fa-location-arrow text-[#B4B4B4] me-2"></i>
+                        Explore documentation</a>
+
+                </article>
+                <article>
+                    <ul class="flex items-center justify-start gap-1">
+                        <li><a href="#" class="font-semibold storage-tab bg-[#313131] text-white">Public access to a
+                                bucket</a></li>
+                        <li><a href="#" class="text-[#4D4D4D] storage-tab">Public access to a folder</a></li>
+                        <li><a href="#" class="text-[#4D4D4D] storage-tab hidden md:flex">Authenticated access to a
+                                bucket</a></li>
+                    </ul>
+                    <article class="flex flex-col items-center justify-start gap-2">
+                        <img src="./../assets/images/storage-code2.png" class="rounded-md w-[650px] mt-5" alt="">
+                        <article class="bg-[#1F1F1F] p-8 pb-20 w-full border border-[#4D4D4D]/50 rounded-md">
+                            <h4 class="text-lg font-semibold">Allow public CRUD access to a bucket</h4>
+                            <p class="font-semibold text-[#B4B4B4] mt-3">This will allow any user access to the bucket
+                                named 'avatars'</p>
+                        </article>
+                    </article>
+                </article>
+            </div>
+        </section>
+        <section class="flex flex-col items-center justify-center mt-36 mb-36 gap-16">
+            <h3 class="text-4xl font-semibold text-center"><span class="text-[#898989]">Build in a weekend, </span>scale
+                to millions</h3>
+            <div class="flex justify-center items-center gap-2">
+                <a href="#" class="storage-button-green">Start your project</a>
+                <a href="#" class="storage-button">Request a method</a>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-[#0F0F0F]">
+        <section class="flex justify-center align-middle pt-10 pb-10 text-sm font-semibold pe-5 ps-5">
+            <p class="me-32">We protect your data. <a href="#" class=" hover:underline ms-1 text-[#00C573]">More on
+                    Security</a></p>
+            <div class="flex flex-wrap">
+                <p class="me-8"><i class="fa-solid fa-check me-2"></i> SOC2 Type 2 <span
+                        class="ms-1 grey-text font-normal">Certified</span> </p>
+                <p><i class="fa-solid fa-check me-2"></i> HIPAA <span
+                        class="ms-1 grey-text font-normal">Compliant</span>
+            </div>
+            </p>
+
+        </section>
+        <div
+            class="container xl:max-w-[1420px] m-auto ps-5 pe-5 border-t border-t-[#4D4D4D]/50 border-b border-b-[#4D4D4D]/50 pt-24 pb-24 flex items-start justify-between flex-col xl:flex-row gap-10">
+            <section class="w-9/12 xl:w-auto">
+                <a href="./index.html"><img class="w-40" src="./assets/images/supabase-dark.svg" alt=""></a>
+                <div class="flex items-center justify-start gap-5 mt-8">
+                    <a href="#"><i class="icon-social fa-brands fa-x-twitter"></i></a>
+                    <a href="#"><i class="icon-social fa-brands fa-github"></i></a>
+                    <a href="#"><i class="icon-social fa-brands fa-discord"></i></a>
+                    <a href="#"><i class="icon-social fa-brands fa-youtube"></i></a>
+                </div>
+            </section>
+            <section
+                class="flex justify-start lg:justify-between xl:justify-end items-start gap-5 lg:gap-18 w-full flex-wrap">
+                <ul>
+                    <li class="text-white mb-3 text-md font-semibold">Product</li>
+                    <li><a class="footer-link" href="#">Database</a></li>
+                    <li><a class="footer-link" href="#">Auth</a></li>
+                    <li><a class="footer-link" href="#">Functions</a></li>
+                    <li><a class="footer-link" href="#">Realtime</a></li>
+                    <li><a class="footer-link" href="#">Storage</a></li>
+                    <li><a class="footer-link" href="#">Vector</a></li>
+                    <li><a class="footer-link" href="#">Cron</a></li>
+                    <li><a class="footer-link" href="#">Pricing</a></li>
+                    <li><a class="footer-link" href="#">Launch Week</a></li>
+                </ul>
+                <ul>
+                    <li class="text-white mb-3 text-md font-semibold">Solutions</li>
+                    <li><a class="footer-link" href="#">AI Builders</a></li>
+                    <li><a class="footer-link" href="#">No Code</a></li>
+                    <li><a class="footer-link" href="#">Beginners</a></li>
+                    <li><a class="footer-link" href="#">Developers</a></li>
+                    <li><a class="footer-link" href="#">Postgres Devs</a></li>
+                    <li><a class="footer-link" href="#">Vibe Coders</a></li>
+                    <li><a class="footer-link" href="#">Hackaton Contestants</a></li>
+                    <li><a class="footer-link" href="#">Startups</a></li>
+                    <li><a class="footer-link" href="#">Enterprise</a></li>
+                    <li><a class="footer-link" href="#">Innovation Teams</a></li>
+                </ul>
+                <ul>
+                    <li class="text-white mb-3 text-md font-semibold">Resources</li>
+                    <li><a class="footer-link" href="#">Blog</a></li>
+                    <li><a class="footer-link" href="#">Support</a></li>
+                    <li><a class="footer-link" href="#">System Status</a></li>
+                    <li><a class="footer-link" href="#">Become a Partner</a></li>
+                    <li><a class="footer-link" href="#">Integrations</a></li>
+                    <li><a class="footer-link" href="#">Brand Assets</a></li>
+                    <li><a class="footer-link" href="#">Security & Compliance</a></li>
+                    <li><a class="footer-link" href="#">DPA</a></li>
+                    <li><a class="footer-link" href="#">SOC2</a></li>
+                    <li><a class="footer-link" href="#">HIPAA</a></li>
+                </ul>
+                <ul>
+                    <li class="text-white mb-3 text-md font-semibold">Developers</li>
+                    <li><a class="footer-link" href="#">Documentation</a></li>
+                    <li><a class="footer-link" href="#">Supabase UI</a></li>
+                    <li><a class="footer-link" href="#">Changelog</a></li>
+                    <li><a class="footer-link" href="#">Careers</a></li>
+                    <li><a class="footer-link" href="#">Contributing</a></li>
+                    <li><a class="footer-link" href="#">Open Source</a></li>
+                    <li><a class="footer-link" href="#">SupaSquad</a></li>
+                    <li><a class="footer-link" href="#">DevTo</a></li>
+                    <li><a class="footer-link" href="#">RSS</a></li>
+                </ul>
+                <ul>
+                    <li class="text-white mb-3 text-md font-semibold">Company</li>
+                    <li><a class="footer-link" href="#">Company</a></li>
+                    <li><a class="footer-link" href="#">General Availability</a></li>
+                    <li><a class="footer-link" href="#">Terms of Service</a></li>
+                    <li><a class="footer-link" href="#">Privacy Policy</a></li>
+                    <li><a class="footer-link" href="#">Privacy Settings</a></li>
+                    <li><a class="footer-link" href="#">Acceptable Use Policy</a></li>
+                    <li><a class="footer-link" href="#">Support Policy</a></li>
+                    <li><a class="footer-link" href="#">Service Level Agreement</a>
+                    </li>
+                    <li><a class="footer-link" href="#">Humans.txt</a></li>
+                    <li><a class="footer-link" href="#">Lawyers.txt</a></li>
+                    <li><a class="footer-link" href="#">Security.txt</a></li>
+                    <li><a class="footer-link" href="#">Contact Us</a></li>
+                </ul>
+            </section>
+        </div>
+        <div class="max-w-[1400px] m-auto pt-8 pb-32 flex justify-between items-center">
+            <span class="grey-text text-xs">@ Supabase Inc</span>
+            <i class="grey-text fa-regular fa-moon text-xl"></i>
+        </div>
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

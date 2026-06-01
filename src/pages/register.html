@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supabase | Register</title>
+    <link rel="stylesheet" href="./../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="shortcut icon" href="./../assets/images/supabase-logo-icon.svg" type="image/x-icon">
+</head>
+
+<body class="background-color text-white">
+    <a href="#" class="button-absolute"><i class="fa-solid fa-book-open me-1"></i> Documentation</a>
+    <div class="flex items-start justify-start">
+
+        <section class="p-8 bg-[#171717] w-screen xl:w-2/5 min-h-screen border-e border-e-[#4D4D4D]/50 flex flex-col justify-between">
+            <a href="./../index.html"><img class="w-32" src="./../assets/images/supabase-dark.svg" alt=""></a>
+
+            <div class="flex justify-center">
+                <section class="w-100">
+                    <h2 class="text-3xl mb-3">Get started</h2>
+                    <p class="text-sm grey-text">Create a new account</p>
+                    <div class="flex flex-col gap-5 mt-10">
+                        <a class="button-form bg-[#242424]" href="#"><i class="fa-brands fa-github me-2"></i> Continue
+                            with GitHub</a>
+                        <a class="button-form " href="#"><i class="fa-solid fa-lock me-2"></i> Continue with SSO</a>
+                    </div>
+                    <div class="flex items-center justify-between w-full mt-4 mb-6">
+                        <div class="border-t border-[#4D4D4D]/50 w-5/12"> </div>
+                        <p>or</p>
+                        <div class="border-t border-[#4D4D4D]/50 w-5/12"></div>
+                    </div>
+
+                    <form action="" class="flex flex-col gap-4 w-full">
+                        <div class="flex items-center w-full">
+                            <div class="">
+                                <label class="text-sm" for="">Name</label>
+                                <input class="mt-2 input-form" placeholder="Your name" type="text" name="" id="">
+                            </div>
+                            <div class="">
+                                <label class="text-sm" for="">Surname</label>
+                                <input class="mt-2 input-form w-full" placeholder="Your surname" type="text" name="" id="">
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col">
+                            <label class="text-sm" for="email">Email</label>
+                            <input class="mt-2 input-form" type="text" name="" placeholder="you@example.com" id="email">
+                        </div>
+                        <div class="flex flex-col relative">
+                            <label class="text-sm" for="password">Password</label>
+                            <input class="mt-2 input-form" type="password" name="" placeholder="••••••••" id="password"><i class="fa-regular fa-eye eye-icon"></i>
+                        </div>
+                        <div class="flex flex-col relative">
+                            <label class="text-sm" for="passwordConfirm">Confirm password</label>
+                            <input class="mt-2 input-form" type="password" name="" placeholder="••••••••" id="passwordConfirm"><i class="fa-regular fa-eye eye-icon"></i>
+                        </div>
+                        <input class="mt-5 mb-5 w-full button-submit" type="submit" value="Sign up">
+                    </form>
+                    <p class="text-sm text-center text-[#898989]">Have an account? <a href="#"
+                            class="transition-all duration-150 hover:text-[#898989] text-white underline">Sign in</a></p>
+                </section>
+            </div>
+            <div class="w-full flex justify-center">
+                <p class="w-[340px] text-xs text-center text-[#898989]">By continuing, you agree to Supabase’s <a href="#"
+                        class="hover:text-[#c2c2c2] transition-all duration-150 underline">Terms of Service</a> and <a href="#"
+                        class="hover:text-[#c2c2c2] transition-all duration-150 underline">Privacy Policy</a>, and to receive periodic
+                    emails with updates.</p>
+            </div>
+        </section>
+        <section class="hidden h-screen w-3/5 xl:flex flex-col items-center justify-center">
+            <div class="w-[500px] relative">
+                <span class="z-0 absolute top-[-40px] pb-5 left-[-50px] font-bold font-serif text-[#212121] text-9xl">“</span>
+                <h3 class="text-3xl z-10 relative">Jeez, and @supabase have native support for magic link login?! I was going to use
+                    http://magic.link for
+                    this But if I can get my whole DB + auth + magic link support in one... Awesome</h3>
+            </div>
+            <a href="#" class="w-[500px] flex items-center justify-start gap-5 mt-5">
+                <img class="w-12 rounded-full" src="./../assets/images/profile.jpg" alt="profile">
+                <span class="font-bold text-[#898989]">@louisbarclay</span>
+            </a>
+        </section>
+    </div>
+</body>
+
+</html>
